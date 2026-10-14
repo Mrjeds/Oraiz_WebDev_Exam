@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='referrer' content='no-referrer'>
+	<title>Log in - Jade</title>
+	<link rel='stylesheet' href='../src/css/style.css'>
+</head>
+<body data-guest data-root='../'>
+	<nav id='nav'></nav>
+	<div id='bg'>
+
+		<div class='card auth'>
+			<h1>Log in</h1>
+			<form id='login-form'>
+				<label for='username'>Username</label>
+				<input id='username' name='username' autocomplete='username' required>
+				<label for='password'>Password</label>
+				<input id='password' name='password' type='password' autocomplete='current-password' required>
+				<p><button type='submit'>Log in</button></p>
+				<p id='msg' class='msg'></p>
+			</form>
+			<p>No account? <a href='signup.html'>Sign up</a></p>
+		</div>
+	</div>
+	<footer id='footer'></footer>
+	<script src='../src/js/main.js'></script>
+	<script src='../src/js/auth.js'></script>
+</body>
+</html>

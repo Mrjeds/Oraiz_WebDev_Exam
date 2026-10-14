@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='referrer' content='no-referrer'>
+	<title>Feed - Jade</title>
+	<link rel='stylesheet' href='../src/css/style.css'>
+</head>
+<body data-root='../'>
+	<nav id='nav'></nav>
+	<div id='bg'>
+
+		<div class='card'>
+			<h1>Feed</h1>
+			<form id='post-form'>
+				<label for='text'>What's on your mind?</label>
+				<textarea id='text' name='text' rows='3' maxlength='500'></textarea>
+				<label class='check'><input type='checkbox' name='secret'> Post secretly (hide my real name)</label>
+				<img id='img-preview' class='post-img hidden' alt='Selected image'>
+				<div class='row'>
+					<label class='btn secondary file-btn'>&#128247; Photo<input id='image' type='file' accept='image/*' hidden></label>
+					<button type='button' id='img-clear' class='secondary hidden'>Remove photo</button>
+					<button type='submit' style='margin-left:auto'>Post</button>
+				</div>
+				<p id='post-msg' class='msg'></p>
+			</form>
+		</div>
+
+		<div id='posts'></div>
+	</div>
+	<footer id='footer'></footer>
+	<script src='../src/js/main.js'></script>
+	<script src='../src/js/feed.js'></script>
+</body>
+</html>

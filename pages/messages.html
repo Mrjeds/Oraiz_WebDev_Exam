@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='referrer' content='no-referrer'>
+	<title>Chat - Jade</title>
+	<link rel='stylesheet' href='../src/css/style.css'>
+</head>
+<body data-root='../'>
+	<nav id='nav'></nav>
+	<div id='bg'>
+
+		<div id='conv-view'>
+			<h1>Messages</h1>
+			<div id='conv-list'></div>
+			<p class='hint'>Start a new chat from <a href='people.html'>People</a> or any profile.</p>
+		</div>
+
+		<div id='thread-view' class='hidden'>
+			<div class='row thread-head'>
+				<a href='messages.html' class='btn secondary'>&larr;</a>
+				<a id='thread-who' class='post-head' href='#'></a>
+				<button id='clear-chat' class='secondary' style='margin-left:auto'>Clear chat</button>
+			</div>
+			<div id='chat' class='chat'></div>
+			<form id='chat-form' class='chat-form'>
+				<input name='text' maxlength='500' placeholder='Write a message...' autocomplete='off' required>
+				<button type='submit'>Send</button>
+			</form>
+		</div>
+	</div>
+	<footer id='footer'></footer>
+	<script src='../src/js/main.js'></script>
+	<script src='../src/js/messages.js'></script>
+</body>
+</html>

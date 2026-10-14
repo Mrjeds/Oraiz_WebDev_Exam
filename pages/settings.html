@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='referrer' content='no-referrer'>
+	<title>Settings - Jade</title>
+	<link rel='stylesheet' href='../src/css/style.css'>
+</head>
+<body data-root='../'>
+	<nav id='nav'></nav>
+	<div id='bg'>
+
+		<div class='card'>
+			<h1>Privacy settings</h1>
+			<label><input type='checkbox' id='privateProfile' style='width:auto'> Private profile</label>
+			<label><input type='checkbox' id='hideLikes' style='width:auto'> Hide like counts</label>
+			<span class='hint'>Changes save automatically.</span>
+		</div>
+
+		<div class='card'>
+			<h2>Your data</h2>
+			<p><button id='export' class='secondary'>Download my data (JSON)</button></p>
+			<p><button id='logout-btn' class='secondary'>Log out</button></p>
+			<p><button id='delete' class='danger'>Delete my account</button></p>
+		</div>
+	</div>
+	<footer id='footer'></footer>
+	<script src='../src/js/main.js'></script>
+	<script src='../src/js/settings.js'></script>
+</body>
+</html>

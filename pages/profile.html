@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='referrer' content='no-referrer'>
+	<title>Profile - Jade</title>
+	<link rel='stylesheet' href='../src/css/style.css'>
+</head>
+<body data-root='../'>
+	<nav id='nav'></nav>
+	<div id='bg'>
+
+		<div class='card profile-head'>
+			<div class='cover'></div>
+			<img id='avatar-preview' class='avatar xl' alt='Profile picture'>
+			<h1 id='p-name'></h1>
+			<p id='profile-username' class='muted'></p>
+			<p id='p-bio'></p>
+			<p id='p-meta' class='muted'></p>
+			<a id='msg-btn' class='btn hidden' href='#'>&#128172; Message</a>
+		</div>
+		<p id='p-note' class='card hidden'></p>
+
+		<div id='edit-area'>
+
+		<div class='card'>
+			<h2>Edit profile</h2>
+			<form id='profile-form'>
+				<label for='avatar'>Profile picture</label>
+				<input id='avatar' name='avatar' type='file' accept='image/*'>
+				<span class='hint'>Max 500 KB. Stored only in this browser.</span>
+				<p><button type='button' id='avatar-remove' class='secondary'>Remove picture</button></p>
+				<label for='displayName'>Display name</label>
+				<input id='displayName' name='displayName' maxlength='40'>
+				<label for='bio'>Bio</label>
+				<textarea id='bio' name='bio' rows='3' maxlength='160'></textarea>
+				<label for='location'>Location (optional)</label>
+				<input id='location' name='location' maxlength='40'>
+				<label for='website'>Website (optional)</label>
+				<input id='website' name='website' type='url'>
+				<p><button type='submit'>Save profile</button></p>
+				<p id='profile-msg' class='msg'></p>
+			</form>
+		</div>
+
+		<div class='card'>
+			<h2>Change password</h2>
+			<form id='password-form'>
+				<label for='current'>Current password</label>
+				<input id='current' name='current' type='password' autocomplete='current-password' required>
+				<label for='next'>New password</label>
+				<input id='next' name='next' type='password' autocomplete='new-password' required>
+				<p><button type='submit'>Update password</button></p>
+				<p id='password-msg' class='msg'></p>
+			</form>
+		</div>
+		</div>
+		<h2 id='posts-title'>Posts</h2>
+
+		<div id='user-posts'></div>
+	</div>
+	<footer id='footer'></footer>
+	<script src='../src/js/main.js'></script>
+	<script src='../src/js/profile.js'></script>
+</body>
+</html>
